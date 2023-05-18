@@ -1,0 +1,13 @@
+{
+    "name": "lib_webrtc_forest",
+    "target": "armv6",
+    "description": "[name] [WebRTCpath]",
+    "scripts": "./lib_webrtc_forest gcs.iotocean.org:7598",
+    "data": [],
+    "control": [
+        "Control"
+    ]
+}
+
+
+

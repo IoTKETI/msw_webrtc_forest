@@ -1,0 +1,24 @@
+{
+  "name": "msw_webrtc_forest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "msw_webrtc_forest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IoTKETI/msw_webrtc_forest.git"
+  },
+  "author": "Wonseok Jung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IoTKETI/msw_webrtc_forest/issues"
+  },
+  "homepage": "https://github.com/IoTKETI/msw_webrtc_forest#readme",
+  "dependencies": {
+    "mqtt": "^4.3.5",
+    "nanoid": "^3.2.0",
+    "shortid": "^2.2.16"
+  }
+}
