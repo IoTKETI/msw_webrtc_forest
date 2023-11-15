@@ -12,7 +12,7 @@ const os = require('os');
 
 global.sh_man = require('./http_man');
 
-let my_msw_name = 'msw_webrtc_crow';
+let my_msw_name = 'msw_webrtc_forest';
 
 let config = {};
 
@@ -39,15 +39,15 @@ catch (e) {
 // library 추가
 let add_lib = {};
 try {
-    add_lib = JSON.parse(fs.readFileSync('./lib_webrtc_crow.json', 'utf8'));
+    add_lib = JSON.parse(fs.readFileSync('./lib_webrtc_forest.json', 'utf8'));
     config.lib.push(add_lib);
 }
 catch (e) {
     add_lib = {
-        name: 'lib_webrtc_crow',
+        name: 'lib_webrtc_forest',
         target: 'armv6',
         description: '[name] [WebRTCpath] [Drone Name] [GCS Name]',
-        scripts: './lib_webrtc_crow gcs.iotocean.org:7598 drone1 KETI_GCS',
+        scripts: './lib_webrtc_forest gcs.iotocean.org:7598 drone1 KETI_GCS',
         data: [
             "room_name"
         ],
@@ -104,7 +104,7 @@ function runLib(obj_lib) {
 
         run_lib.stderr.on('data', function (data) {
             console.log('stderr: ' + data);
-            if (data.includes("Failed to execute script 'lib_webrtc_crow' due to unhandled exception!")) {
+            if (data.includes("Failed to execute script 'lib_webrtc_forest' due to unhandled exception!")) {
                 runLibState = 'error';
             }
         });
